@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="36" fill="#0B1F3A"/>
+  <!-- Radio waves / connectivity resilience -->
+  <path d="M50 82 A52 52 0 0 1 142 82" stroke="#F4B41A" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M64 96 A36 36 0 0 1 128 96" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Emergency shield & pin -->
+  <polygon points="96,110 80,140 112,140" fill="#D71920"/>
+  <circle cx="96" cy="112" r="10" fill="#D71920"/>
+  <!-- Heartbeat / beacon center -->
+  <circle cx="96" cy="96" r="6" fill="#F4B41A"/>
+</svg>

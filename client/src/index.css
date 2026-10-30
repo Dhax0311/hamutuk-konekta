@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1F3A;
+  --color-navy-light: #162C4E;
+  --color-navy-dark: #071528;
+  --color-emergency: #D71920;
+  --color-emergency-hover: #B8141A;
+  --color-warning: #F4B41A;
+  --color-bg-light: #F5F7FA;
+  --color-surface: #FFFFFF;
+  --color-text-main: #253246;
+  --color-text-muted: #64748B;
+  --color-border-subtle: #E2E8F0;
+  
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+}
+
+/* Custom scrollbars for clean emergency dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Pulse animation for simulated heartbeat beacon */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.beacon-pulse {
+  animation: pulse-ring 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* Leaflet map custom styling for HAMUTUK 2.0 */
+.leaflet-container {
+  isolation: isolate;
+  font-family: inherit;
+  z-index: 10;
+}
+
+.hamutuk-popup .leaflet-popup-content-wrapper {
+  border-radius: 0.75rem;
+  padding: 0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.hamutuk-popup .leaflet-popup-content {
+  margin: 12px;
+  line-height: 1.4;
+}
+
+.hamutuk-popup .leaflet-popup-tip {
+  background: white;
+}
+
+/* Custom DivIcon reset */
+.custom-incident-marker,
+.custom-cluster-marker,
+.custom-sitewatch-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Sleek custom scrollbar for sidebar menu */
+.sidebar-scroll {
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

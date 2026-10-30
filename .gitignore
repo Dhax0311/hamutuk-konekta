@@ -1,0 +1,32 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+coverage/
+*.log
+.DS_Store
+.vscode/
+
+# Database files and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
+*.bak
+*.backup
+backups/
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Temporary files
+*.tmp
+temp/
+.cache/
