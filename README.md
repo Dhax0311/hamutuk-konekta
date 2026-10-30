@@ -1,170 +1,191 @@
 # HAMUTUK 2.0 — Disaster Coordination & Network Resilience
 
-**Vorakai Konekta Challenge 2026 · Timor-Leste**
-**Track:** BUILD
-**Grand Challenge:** C — Disaster Resilience & Early Warning
-**Pilot Location:** Viqueque Municipality, Timor-Leste\
+**Vorakai Konekta Challenge 2026 · Timor-Leste**  
+**Track:** BUILD  
+**Grand Challenge:** C — Disaster Resilience & Early Warning  
+**Pilot Context:** Viqueque Municipality, Timor-Leste  
+**Primary Language:** Tetum-first, with English evaluation support
 
+<p align="center">
+  <a href="https://vorakai-konekta.daniloviana.com">
+    <strong>🌐 Open HAMUTUK Live Demo</strong>
+  </a>
+</p>
 
-\<p align="center">
-&#x20; \<strong>Sistema digital offline-first atu ajuda komunidade relata dezastre no hadi'a emergency coordination, maski internet la estável.\</strong>
-\</p>
-
-\<p align="center">
-&#x20; \<a href="[https://vorakai-konekta.daniloviana.com](https://vorakai-konekta.daniloviana.com)">
-&#x20;   \<strong>🌐 Test HAMUTUK Live Demo\</strong>
-&#x20; \</a>
-\</p>
+<p align="center">
+  <em>Teknolojia ne'ebé ajuda komunidade kontinua relata no organiza informasaun importante, maski internet la estável.</em>
+</p>
 
 ---
 
 ## 1. About HAMUTUK
 
-**HAMUTUK 2.0** mak protótipu digital ida ne'ebé dezenvolve atu ajuda komunidade iha Munisípiu Viqueque, Timor-Leste, atu relata incidentes, rejista nesesidade urgente, no hadi'a coordination durante disaster situations.
+**HAMUTUK 2.0** mak protótipu digital ida ba disaster coordination no network resilience, ho focus ba komunidade rurál iha Viqueque Municipality, Timor-Leste.
 
-Iha área rurál no área remota sira, internet bele fraku ka interrompe, liuliu bainhira akontese udan boot, inundasaun, rai-halai, ka power outage. Bainhira koneksaun la iha, komunidade bele hasoru difikuldade atu haruka informasaun importante ba autoridade.
+Iha área remota, internet bele fraku ka interrompe tanba weather conditions, shared satellite connectivity, power outages, ka limitasaun infraestrutura. Bainhira situasaun hanesan ne'e akontese, komunidade bele hasoru difikuldade atu haruka informasaun kona-ba incident reports no urgent needs ba autoridade.
 
-HAMUTUK uza **offline-first approach**, ne'ebé permite aplikasaun rai relatóriu lokalmente iha device no sincroniza ba server bainhira internet fila fali, se offline functionality ne'e disponivel no funsiona iha deployment ne'ebé uza.
+HAMUTUK nia objetivu mak dezenvolve sistema **offline-first** ne'ebé bele ajuda utilizadór rejista informasaun lokalmente, depois synchronize ba central server bainhira koneksaun fila fali, se offline functionality ne'e disponivel no funsiona iha deployment atual.
 
-### Main Objectives
+Sistema ne'e mós inklui SiteWatch monitoring simulation atu demonstra oinsá network status bele organiza no monitoriza iha dashboard.
 
-- Permite komunidade atu kria disaster reports maski internet la iha.
-- Rai relatóriu lokalmente no synchronize bainhira connectivity returns.
-- Uza Tetum-first interface ne'ebé simples no fasil atu komprende.
-- Ajuda autoridade organiza no review disaster reports.
-- Hatudu network connectivity status liuhusi SiteWatch simulation.
-- Design sistema ne'ebé konsidera shared Starlink connections, limited bandwidth, power interruptions, no basic digital literacy.
+### Our Mission
+
+> **Komunidade bele rejista informasaun importante maski internet la iha, no sistema tenke hatudu klaru se informasaun ne'e rai de'it iha device ka server simu ona.**
+
+HAMUTUK nia design konsidera:
+- Shared Starlink or satellite connectivity.
+- Limited bandwidth no unstable internet.
+- Power interruptions.
+- Tetum-first users ho basic digital skills.
+- Disaster reporting no community urgent needs.
+- Network visibility no accountable information handling.
 
 > **Important Safety Disclosure**
 >
-> HAMUTUK mak disaster coordination prototype, la'ós official emergency dispatch system. Nia la substitui ambulance, health services, clinical triage, ka emergency communication procedures. Sistema ne'e mós la produz meteorological forecasts rasik. Relatóriu ne'ebé kria offline sei la to'o ba autoridade to'o iha communication channel ne'ebé disponivel.
+> HAMUTUK mak disaster coordination prototype, la'ós official emergency dispatch system. Nia la substitui ambulance, medical services, clinical triage, ka established emergency response procedures. Nia mós la produz meteorological predictions rasik. Bainhira connectivity la iha, offline reports la bele to'o ba authority to'o communication channel ida disponivel.
 
 ---
 
-## 2. Live Demo
+## 2. 🌐 Live Demo
 
-### Test HAMUTUK Online
+**Test HAMUTUK Online:**  
+https://vorakai-konekta.daniloviana.com
 
-🌐 **Live Demo:** [https://vorakai-konekta.daniloviana.com](https://vorakai-konekta.daniloviana.com)
-
-Ita bele asesu live demo atu explora interface no feature sira ne'ebé disponivel iha deployment atual.
+Ita bele asesu protótipu online liuhusi browser atu explora interface no feature sira ne'ebé disponivel iha deployment atual.
 
 ### Suggested Demo Flow
 
-1. Open live demo iha browser.
-2. Explore homepage no application navigation.
-3. Haree incident reporting interface.
-4. Explore administrative dashboard no interactive map, se disponivel.
-5. Test SiteWatch monitoring simulation.
-6. Se deployment suporta offline mode, koko kria relatóriu bainhira internet off no verifica synchronization bainhira internet fila fali.
+1. Open HAMUTUK Live Demo.
+2. Explore the application interface.
+3. Haree incident reporting no community needs features, se disponivel.
+4. Explore administrative dashboard no map, se implementadu iha deployment.
+5. Test SiteWatch monitoring simulation, se disponivel.
+6. Se offline functionality disponivel, koko kria report bainhira offline no verifica synchronization depois internet fila fali.
 
-**Important:** Feature sira ne'ebé ita bele testa depende ba implementasaun no configuration iha live server. Ba testing, uza demo data de'it. Labele hatama real personal information, medical information, ka confidential emergency reports.
-
----
-
-## 3. Project Status
-
-HAMUTUK 2.0 mak protótipu ne'ebé dezenvolve ba Vorakai Konekta Challenge 2026.
-
-Projetu nia architecture inklui frontend application, backend API, database, no SiteWatch monitoring simulation.
-
-Feature status tenke verifika tuir code no live deployment atual.
-
-| Component                | Purpose                                                             |
-| ------------------------ | ------------------------------------------------------------------- |
-| Incident Reporting       | Kria no rejista disaster incident reports                           |
-| Offline Storage          | Rai relatóriu iha device bainhira offline, se implementadu no ativu |
-| Synchronization          | Haruka pending reports bainhira internet fila fali                  |
-| Administrative Dashboard | Ajuda authorized personnel review relatóriu                         |
-| Interactive Map          | Visualiza report locations, se disponivel                           |
-| SiteWatch Simulation     | Demonstra network monitoring states                                 |
-| Authentication           | Kontrola asesu ba protected functions                               |
-
-Feature balu bele presiza additional implementation, configuration, ka testing antes uza iha real-world operations.
+**Testing note:** Uza demo data de'it. Labele hatama real personal information, medical information, passwords, ka confidential emergency reports iha public demo.
 
 ---
 
-## 4. Core Features
+## 3. The Problem
 
-### 4.1 Offline-First Incident Reporting
+Iha komunidade rurál no área remota iha Timor-Leste, reliable connectivity bele sai desafio, liuliu durante bad weather, power interruptions, ka disaster situations.
 
-HAMUTUK nia offline-first design atu permite utilizadór kria relatóriu maski internet la disponivel.
+Bainhira internet la estável:
+- Community reports bele atrasa.
+- Informasaun importante bele difisil atu organiza.
+- Autoridade bele falta visibility kona-ba incident reports ne'ebé seidauk verified.
+- Network outages bele hamenus ability atu synchronize informasaun.
+- Utilizadór ho basic digital skills presiza interface simples no klaru.
 
-Intended workflow:
+HAMUTUK foka ba problema ida ne'e liuhusi offline-first reporting concept no disaster coordination workflow.
 
-1. User kria incident report.
+**Pilot context:** Viqueque Municipality, Timor-Leste.
+
+Problema no proposed solution sei presiza field validation ho komunidade no autoridade relevante atu konfirma real-world needs no operational requirements.
+
+---
+
+## 4. The Solution
+
+HAMUTUK propoin digital platform ida ne'ebé combina incident reporting, community needs recording, synchronization workflow, no network monitoring simulation.
+
+### 4.1 Offline-First Reporting
+
+Application nia intended workflow mak:
+
+1. Utilizadór kria incident report.
 2. Application valida informasaun.
-3. Report rai iha local device storage.
-4. Application hatudu synchronization status.
-5. Bainhira internet fila fali, application koko synchronize report ba backend.
-6. Report status atualiza depois server fó acknowledgement.
+3. Report rai iha local device storage, se offline storage feature funsiona.
+4. Utilizadór haree status report.
+5. Bainhira internet fila fali, application koko synchronize pending reports.
+6. Server acknowledgement hatudu katak server simu report.
 
-Local persistence uza IndexedDB liuhusi Dexie, tuir projetu nia documented architecture.
+Offline-first design ajuda hamenus dependénsia ba continuous internet connection bainhira kria report.
 
-### Report Synchronization Status
+### 4.2 Community Needs
 
-| Status                | Tetum Label                              | Meaning                                |
-| --------------------- | ---------------------------------------- | -------------------------------------- |
-| `SAVED_ON_DEVICE`     | Rai ona iha aparellu ne'e                | Report rai ona iha device              |
-| `PENDING_SYNC`        | Hein sincronizasaun                      | Report hein atu synchronize            |
-| `SYNCING`             | Sincroniza daudaun...                    | Synchronization la'o hela              |
-| `SERVER_ACKNOWLEDGED` | Simu ona husi servidor sentrál           | Server konfirma katak report simu ona  |
-| `SYNC_FAILED`         | Sincronizasaun falla — presiza koko fali | Synchronization falla no presiza retry |
+System API documented support ba community urgent needs, atu bele rejista informasaun kona-ba nesesidade komunidade durante incident situations.
 
-Status sira-ne'e ajuda utilizadór komprende se report rai de'it iha device ka server simu ona.
-
-**Limitation:** Offline storage la garante delivery. Se device mate bateria, estraga, ka browser storage apaga antes synchronization, relatóriu ne'ebé seidauk synchronize bele lakon.
-
-### 4.2 Disaster Reports & Community Needs
-
-Backend API inklui endpoints atu suporta:
-
-- Disaster incident reports.
-- Community urgent needs.
-- Report verification.
-- Official early warnings.
-
-Sistema ne'e planeia atu ajuda authorized personnel review informasaun ne'ebé komunidade relata.
-
-Maibé, relatóriu ida la sai automaticamente verified. Autoridade ka personnel responsavel tenke verifica informasaun antes konsidera hanesan confirmed incident.
+Relatóriu hotu-hotu tenke review no verify hosi authorized personnel antes konsidera hanesan confirmed information.
 
 ### 4.3 Administrative Coordination
 
-HAMUTUK nia administrative workflow planeia atu conecta:
+HAMUTUK nia concept atu suporta information coordination entre administrative levels hanesan:
 
 - Aldeia
 - Suku
 - Postu Administrativu
 - Municipality
 
-Objetivu mak ajuda organiza reports, melhora visibility, no suporta coordination entre authorized personnel.
+Objetivu mak ajuda responsible personnel organiza no review informasaun ne'ebé komunidade submete.
 
-Workflow dijitál ne'e la garante katak autoridade sei simu ka responde ba report bainhira communication channels hotu interrompe.
+Workflow digital ne'e la garante automatic response hosi autoridade. Operational responsibilities no escalation procedures presiza define ho responsible institutions.
 
-### 4.4 SiteWatch Network Telemetry — Simulation
+### 4.4 SiteWatch Network Monitoring Simulation
 
-SiteWatch iha HAMUTUK mak prototype simulation atu demonstra network monitoring concepts.
+SiteWatch iha protótipu ne'e mak simulation atu demonstra network monitoring concepts.
 
-Tuir dokumentasaun projetu, simulation inklui:
+Simulation states inklui:
+- `ONLINE`
+- `STALE / LAST SEEN`
+- `UNREACHABLE`
+- `UNKNOWN`
 
-- Five administrative-post hub entries.
-- DEMO Suco A no DEMO Suco B.
-- `ONLINE` status.
-- `STALE / LAST SEEN` status.
-- `UNREACHABLE` status.
-- `UNKNOWN` status.
-- Configurable stale thresholds: 5, 15, 30, no 60 minutes.
-- Stop no Resume controls ba live simulation testing.
+Simulation bele ajuda demonstra oinsá dashboard ida hatudu heartbeat status no identify monitoring points ne'ebé presiza investigation.
 
-**Important:** SiteWatch telemetry iha protótipu ne'e simulated data. Nia la representa verified live monitoring ba ISP routers, Starlink terminals, ka physical network infrastructure.
-
-Missing heartbeat la signifika automaticamente katak router ka power failure akontese. Technician verification sei presiza atu konfirma problema.
+**Important:** SiteWatch telemetry iha protótipu ne'e mak simulated data. Nia la representa verified live monitoring hosi Starlink terminals, ISP routers, ka physical network infrastructure.
 
 ---
 
-## 5. Technology Stack
+## 5. Core Features
 
-HAMUTUK uza teknolojia sira tuirmai, tuir projetu nia current documented architecture.
+| Feature | Purpose |
+|---|---|
+| Incident Reporting | Kria no rejista disaster incident reports |
+| Offline-First Concept | Suporta local report storage bainhira offline, se feature implementadu no ativu |
+| Report Synchronization | Synchronize pending reports bainhira connection fila fali |
+| Community Needs | Rejista urgent community needs |
+| Report Verification | Suporta verification workflow ba authorized personnel |
+| Early Warnings | API support ba warning information |
+| Administrative Dashboard | Central place atu review operational information, se disponivel |
+| SiteWatch Simulation | Demonstra network monitoring states |
+| Tetum-First Approach | Interface no status messages ne'ebé foka ba utilizadór Tetum |
+
+Feature sira ne'ebé bele asesu depende ba current codebase, configuration, no live deployment.
+
+---
+
+## 6. Offline Synchronization Status
+
+HAMUTUK nia documented design uza IndexedDB liuhusi Dexie ba local persistence.
+
+Status labels ne'ebé dokumenta iha projetu:
+
+| Technical Status | Tetum Label | Meaning |
+|---|---|---|
+| `SAVED_ON_DEVICE` | Rai ona iha aparellu ne'e | Report rai ona iha device |
+| `PENDING_SYNC` | Hein sincronizasaun | Report hein atu synchronize |
+| `SYNCING` | Sincroniza daudaun... | Synchronization prosesu hela |
+| `SERVER_ACKNOWLEDGED` | Simu ona husi servidor sentrál | Server konfirma katak report simu ona |
+| `SYNC_FAILED` | Sincronizasaun falla — presiza koko fali | Synchronization falla no presiza retry |
+
+### Synchronization Principle
+
+**Saved locally does not mean delivered.**
+
+Bainhira report rai de'it iha device, authority seidauk simu report. Report bele konsidera simu hosi server depois confirmation ne'ebé loos.
+
+### Offline Limitations
+
+- Device presiza iha bateria.
+- Browser storage presiza hela intact.
+- Report ne'ebé seidauk synchronize bele lakon se utilizadór apaga browser storage.
+- Bainhira connectivity hotu interrompe, central server la simu reports foun.
+- Synchronization behavior presiza test iha actual deployment antes real-world use.
+
+---
+
+## 7. Technology Stack
 
 ### Frontend
 
@@ -173,7 +194,8 @@ HAMUTUK uza teknolojia sira tuirmai, tuir projetu nia current documented archite
 - Tailwind CSS v4
 - `@tailwindcss/vite`
 - Workbox / Vite PWA
-- Dexie + IndexedDB ba local data storage
+- Dexie
+- IndexedDB
 
 ### Backend
 
@@ -182,13 +204,13 @@ HAMUTUK uza teknolojia sira tuirmai, tuir projetu nia current documented archite
 - JavaScript ES Modules
 - MySQL
 - `mysql2`
-- Zod ba data validation
-- `bcryptjs` ba password hashing
-- JWT ba authentication
-- Helmet ba HTTP security headers
+- Zod
+- `bcryptjs`
+- JSON Web Tokens (JWT)
+- Helmet
 - Rate limiting
 
-### System Architecture
+### Architecture Overview
 
 ```text
 Community Users
@@ -196,71 +218,59 @@ Community Users
        v
 React + Vite PWA
        |
-       +-------------------------+
-       |                         |
-       v                         v
-Local IndexedDB              Backend API
-(Dexie)                      (Express.js)
-       |                         |
-       |                         v
-       |                    MySQL Database
+       +----------------------------+
+       |                            |
+       v                            v
+Local IndexedDB                 Backend API
+(Dexie)                         (Express.js)
+       |                            |
+       |                            v
+       |                       MySQL Database
        |
-       +---- Synchronize bainhira
-             internet fila fali
+       +---- Synchronize pending
+             reports when
+             connectivity returns
 ```
 
-Architecture ida-ne'e atu hamenus dependénsia ba continuous connectivity bainhira kria relatóriu, no uza central backend ba synchronized records no administrative workflows.
+Architecture ne'e atu suporta local data persistence no centralized data management. Offline storage la elimina dependénsia ba power, device availability, ka eventual connectivity.
 
 ---
 
-## 6. Project Structure
+## 8. Repository Structure
 
 ```text
 hamutuk-konekta/
 ├── client/
-│   ├── src/
-│   ├── public/
-│   └── package.json
+│   └── Frontend application
 ├── server/
-│   ├── database/
-│   │   └── schema.sql
-│   └── package.json
-├── docs/
-│   ├── deployment-plan.md
-│   ├── demo-script.md
-│   ├── qa-checklist.md
-│   ├── API.md
-│   └── DATABASE.md
+│   └── Backend API and database code
 ├── .gitignore
-├── AGENTS.md
 └── README.md
 ```
 
-Ne'e simplified project structure. File no folder sira bele muda tuir development.
+Estrutura ne'e mak overview simplifikadu. Folder no file sira iha `client/` no `server/` bele muda durante development.
 
 ---
 
-## 7. Getting Started — Local Development
+## 9. Run HAMUTUK Locally
 
-Se ita hakarak download no run HAMUTUK iha ita-nia computer, tuir setup steps sira.
+Se ita hakarak run HAMUTUK iha local computer, presiza setup frontend, backend, no database.
 
 ### Prerequisites
 
-Instala:
-
-- Node.js v18 ka liu, ho LTS version ne'ebé kompatível ho dependencies.
-- MySQL Server 8.0 ka liu.
+- Node.js compatible ho project dependencies.
 - npm.
+- MySQL Server.
 - Git.
 
-### 7.1 Clone Repository
+### 9.1 Clone the Repository
 
 ```bash
 git clone https://github.com/Dhax0311/hamutuk-konekta.git
 cd hamutuk-konekta
 ```
 
-### 7.2 Backend Setup
+### 9.2 Configure Backend
 
 Loke terminal iha server directory:
 
@@ -269,7 +279,7 @@ cd server
 npm install
 ```
 
-Kria `server/.env` no configura ho ita-nia local environment.
+Kria `server/.env` no configura environment variables tuir ita-nia local setup.
 
 ```env
 PORT=5000
@@ -288,32 +298,26 @@ ADMIN_EMAIL=admin@hamutuk.local
 ADMIN_PASSWORD=replace_with_a_secure_admin_password
 ```
 
-Troka example values ho konfigurasaun lokal ne'ebé loos.
-
-### Security Notes
-
-- Labele commit `server/.env` ba GitHub.
+**Security requirements:**
+- Troka placeholder values ho secure local values.
+- Labele upload `.env` ba GitHub.
+- Labele uza development passwords iha production.
 - Uza strong, randomly generated JWT secret.
-- Uza strong administrator password.
-- Uza dedicated MySQL user ho required permissions de'it.
-- Labele uza development credentials iha production.
-- Labele hatudu passwords ka database credentials iha screenshot no demo video.
+- Uza dedicated MySQL user ho permissions ne'ebé presiza de'it.
 
-### 7.3 Database Setup
+### 9.3 Prepare the Database
 
-Kria `hamutuk_db` database no configura MySQL user tuir ita-nia local environment.
+Kria database no MySQL user tuir local environment.
 
-Depois, iha `server/` directory, run:
+Depois, se `server/package.json` define `seed` script hanesan dokumentadu, run iha `server/` directory:
 
 ```bash
 npm run seed
 ```
 
-Tuir dokumentasaun projetu, komandu ida-ne'e prepara database schema, kria initial administrator account, no seed SiteWatch demonstration entries.
+Verifika seed script no database configuration antes executa. Uza development database de'it.
 
-Verifika seed script no database configuration antes run. Ba testing, uza development database, la'ós production database.
-
-### 7.4 Start Backend
+### 9.4 Start the Backend
 
 Iha `server/` directory:
 
@@ -321,7 +325,7 @@ Iha `server/` directory:
 npm run dev
 ```
 
-Documented backend address:
+Documented local backend address:
 
 `http://localhost:5000`
 
@@ -329,9 +333,9 @@ Health check:
 
 `http://localhost:5000/api/health`
 
-### 7.5 Start Frontend
+### 9.5 Start the Frontend
 
-Loke terminal foun, fila ba repository root, no run:
+Loke terminal foun no run:
 
 ```bash
 cd client
@@ -339,11 +343,11 @@ npm install
 npm run dev
 ```
 
-Documented frontend address:
+Documented local frontend address:
 
 `http://localhost:5173`
 
-### 7.6 Production Build
+### 9.6 Build the Frontend
 
 Iha `client/` directory:
 
@@ -351,181 +355,153 @@ Iha `client/` directory:
 npm run build
 ```
 
-Komandu ne'e gera frontend production build tuir Vite configuration.
-
-Ba production deployment, configura API base URL, backend origin, HTTPS, database access, no environment variables tuir server environment.
+Komandu ne'e depende ba script ne'ebé define iha `client/package.json`.
 
 ---
 
-## 8. API Endpoints
+## 10. API Overview
 
-Tabela ida-ne'e resume API endpoints ne'ebé dokumenta ona. Verifika backend implementation atu konfirma behavior no authorization.
+Backend API documented support ba endpoints tuirmai. Behavior no access control tenke konfirma ho current implementation.
 
-| Method  | Endpoint                             | Description                 | Access                        |
-| ------- | ------------------------------------ | --------------------------- | ----------------------------- |
-| `GET`   | `/api/health`                        | Service and database status | Public                        |
-| `POST`  | `/api/auth/login`                    | Login ho email no password  | Public, rate-limited          |
-| `GET`   | `/api/auth/me`                       | Current user profile        | Authenticated                 |
-| `GET`   | `/api/reports`                       | Lista disaster reports      | Authenticated                 |
-| `POST`  | `/api/reports`                       | Kria disaster report        | Authenticated                 |
-| `POST`  | `/api/reports/sync`                  | Synchronize pending reports | Authenticated                 |
-| `PATCH` | `/api/reports/:id/verify`            | Verify report               | Municipal Coordinator / Admin |
-| `GET`   | `/api/needs`                         | Lista community needs       | Authenticated                 |
-| `POST`  | `/api/needs`                         | Rejista community need      | Authenticated                 |
-| `GET`   | `/api/warnings`                      | Lista early warnings        | Public / Authenticated        |
-| `POST`  | `/api/warnings`                      | Publika official warning    | Municipal Coordinator / Admin |
-| `GET`   | `/api/sitewatch/sites`               | Lista monitoring points     | Authenticated                 |
-| `POST`  | `/api/sitewatch/sites/:id/heartbeat` | Submit simulation heartbeat | Authenticated                 |
-| `GET`   | `/api/users`                         | Lista authorized personnel  | Admin only                    |
-| `POST`  | `/api/users`                         | Kria staff account          | Admin only                    |
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/api/health` | Service and database status |
+| `POST` | `/api/auth/login` | Login ho email no password |
+| `GET` | `/api/auth/me` | Current authenticated user profile |
+| `GET` | `/api/reports` | Lista disaster incident reports |
+| `POST` | `/api/reports` | Kria disaster report |
+| `POST` | `/api/reports/sync` | Synchronize pending reports |
+| `PATCH` | `/api/reports/:id/verify` | Verify incident report |
+| `GET` | `/api/needs` | Lista community urgent needs |
+| `POST` | `/api/needs` | Rejista urgent community need |
+| `GET` | `/api/warnings` | Lista early warnings |
+| `POST` | `/api/warnings` | Publish early warning |
+| `GET` | `/api/sitewatch/sites` | Lista monitoring points |
+| `POST` | `/api/sitewatch/sites/:id/heartbeat` | Submit SiteWatch simulation heartbeat |
+| `GET` | `/api/users` | Lista authorized personnel |
+| `POST` | `/api/users` | Kria staff account |
 
-Ba request payloads, response formats, validation rules, no error handling, haree [API Documentation](docs/API.md).
+API access depende ba authentication, authorization, no server configuration.
 
 ---
 
-## 9. Security & Privacy
+## 11. Security & Privacy
 
-HAMUTUK bele involve disaster reports no community needs ne'ebé iha informasaun sensível. Tanba ne'e, security no privacy tenke sai prioridade.
+Disaster-related information bele sensitive. HAMUTUK tenke trata informasaun ne'e ho cuidado.
 
-Projetu nia documented security stack inklui authentication, password hashing, validation, security headers, no rate limiting.
+Project stack inklui authentication, password hashing, validation, security headers, no rate limiting components.
 
-Antes real-world deployment, presiza review no test:
+Antes real deployment, security review tenke konsidera:
 
-- Authentication and authorization ba protected endpoints.
+- Authentication no role-based authorization.
 - HTTPS configuration.
-- Secure JWT handling.
-- Database permissions.
-- Input validation and error handling.
-- Protection of sensitive information in logs.
+- Secure password and JWT handling.
+- Database access permissions.
+- Validation ba user input.
+- Protection ba sensitive data iha application logs.
 - Data retention and deletion policies.
-- Recovery procedures ba unsynchronized reports.
-- Backup and restoration procedures.
-- Privacy protection ba vulnerable people.
+- Backup and recovery procedures.
+- Local storage risks.
+- Protection ba personal no medical information.
 
-Offline data iha device bele asesivel ba ema ne'ebé iha access ba device ka browser profile. Local storage la signifika katak data automaticamente encrypted ka fully secure.
+Local browser storage la garante encryption. Se device lakon, fahe, ka asesu hosi ema seluk, stored information bele iha risk.
 
-Labele uza public demo atu submete real medical information, personal details, ka confidential emergency reports.
+**Labele uza public demo atu submete real medical records ka confidential emergency information.**
 
 ---
 
-## 10. Known Limitations
+## 12. Known Limitations & Failure Scenarios
 
-HAMUTUK mak prototype no iha operational limitations.
+### Internet Outage
 
-### Connectivity
+Bainhira internet la iha, reports ne'ebé rai lokalmente sei hein atu synchronize. Nia la bele to'o ba authority to'o communication channel ida disponivel.
 
-Se communication channels hotu la iha, offline reports la bele to'o ba central server to'o koneksaun ka dalan komunikasaun seluk disponivel.
+### Power Failure
 
-### Power
+Application la bele funsiona se device nia bateria hotu no la iha power source.
 
-Application la bele funsiona bainhira device nia bateria hotu no la bele liga.
-
-### Local Storage
+### Lost Local Data
 
 Se browser storage apaga antes synchronization, pending reports bele lakon.
 
-### SiteWatch
+### False Network Diagnosis
 
-Telemetry mak simulation; la konfirma real status hosi physical network equipment.
+Heartbeat ne'ebé lakon la prova katak router estraga ka power outage akontese. Technician verification presiza atu identifika root cause.
 
-### Emergency Response
+### Unverified Reports
 
-HAMUTUK la substitui official emergency dispatch, medical services, ka established emergency response procedures.
+Community reports bele iha incomplete or incorrect information. Authorized personnel tenke verify reports antes halo operational decisions.
 
-### Operational Readiness
+### Emergency Cases
 
-Real deployment presiza additional testing, coordination ho responsible authorities, user training, security review, no operational procedures.
+HAMUTUK la'ós replacement ba ambulance, health workers, police, fire services, ka official emergency channels. Iha emergency situation, komunidade tenke uza available official emergency services no established procedures.
 
----
+### Financial Sustainability
 
-## 11. Testing & Quality Assurance
-
-Projetu inklui QA checklist:
-
-[QA Checklist](docs/qa-checklist.md)
-
-Test scenarios ne'ebé importante:
-
-- Kria report bainhira internet normal.
-- Kria report bainhira offline.
-- Restore connectivity no synchronize pending reports.
-- Test synchronization failure.
-- Prevent duplicate report creation during retries.
-- Test authentication and access control.
-- Test SiteWatch simulation.
-- Test behavior bainhira local storage la disponivel ka apaga.
-
-Marka test hanesan passed de'it depois ita executa duni no rejista rezultadu.
+Long-term operation presiza hosting, database maintenance, security updates, backup, user training, no support. Sustainable operation presiza partnership no clear responsibility.
 
 ---
 
-## 12. Demo Guide
+## 13. Testing
 
-Ba demonstration step-by-step, haree:
+Testing tenke valida behavior iha local development no live deployment.
 
-[Demo Script](docs/demo-script.md)
+Suggested test scenarios:
 
-Suggested demo flow:
+- Create a report while online.
+- Create a report while offline, if supported.
+- Restore connectivity and check synchronization.
+- Test retry after synchronization failure.
+- Verify duplicate reports are handled correctly.
+- Test login and protected routes.
+- Verify user permissions.
+- Test SiteWatch simulation states.
+- Test behavior when local storage is unavailable.
+- Test interface iha mobile screen.
 
-1. Open HAMUTUK live demo.
-2. Esplika connectivity challenges iha komunidade rurál.
-3. Demonstra incident reporting interface.
-4. Se deployment suporta, kria report bainhira offline.
-5. Restore internet no demonstra synchronization.
-6. Explore administrative dashboard and map.
-7. Demonstra SiteWatch simulation.
-8. Esplika system limitations no emergency fallback procedures.
-
-Se offline synchronization seidauk funsiona iha live deployment, esplika limitasaun ne'e ho honestidade no demonstra feature ne'e iha local environment se funsiona.
-
----
-
-## 13. Future Development
-
-Feature no improvement sira ne'ebé bele dezenvolve iha futuru:
-
-- Comprehensive offline synchronization testing.
-- Stronger protection ba sensitive local data.
-- Improved Tetum language support and accessibility.
-- Field testing ho community representatives.
-- Better administrative verification workflow.
-- Improved monitoring and operational reporting.
-- Integration ho authorized real network monitoring systems, se access disponivel.
-- Clear emergency communication fallback procedures.
-- Performance improvements ba low-bandwidth environments.
-
-Lista ida-ne'e mak future development goals, la'ós deklarasaun katak feature hotu implementa ona.
+Labele afirma katak test passed se seidauk executa no verify iha actual environment.
 
 ---
 
-## 14. Documentation
+## 14. Future Improvements
 
-Dokumentasaun projetu:
+Potential future development:
 
-- [Deployment Plan](docs/deployment-plan.md)
-- [Demo Script](docs/demo-script.md)
-- [QA Checklist](docs/qa-checklist.md)
-- [API Documentation](docs/API.md)
-- [Database Documentation](docs/DATABASE.md)
+- Field testing ho community representatives iha Viqueque.
+- Stronger offline data protection.
+- Better low-bandwidth performance.
+- Improved Tetum language support.
+- More accessible interface ba users ho basic digital skills.
+- Clear report verification and escalation procedures.
+- Integration ho authorized real network monitoring systems.
+- Better backup and recovery mechanisms.
+- Training ba suco, postu, no municipality personnel.
+- Defined operational ownership and maintenance plan.
+
+Lista ne'e mak possible improvements, la'ós feature hotu implementadu ona.
 
 ---
 
 ## 15. Competition Information
 
-**Competition:** Vorakai Konekta Challenge 2026
-**Track:** BUILD
-**Grand Challenge:** C — Disaster Resilience & Early Warning
-**Pilot Location:** Viqueque Municipality, Timor-Leste
-**Project:** HAMUTUK 2.0 — Disaster Coordination & Network Resilience
+**Competition:** Vorakai Konekta Challenge 2026  
+**Track:** BUILD  
+**Grand Challenge:** C — Disaster Resilience & Early Warning  
+**Project:** HAMUTUK 2.0 — Disaster Coordination & Network Resilience  
+**Pilot Context:** Viqueque Municipality, Timor-Leste
 
-**Live Demo:** [https://vorakai-konekta.daniloviana.com](https://vorakai-konekta.daniloviana.com)
+**Live Demo:** https://vorakai-konekta.daniloviana.com
+
+**Source Code:** https://github.com/Dhax0311/hamutuk-konekta
 
 ---
 
-## 16. Final Note
+## 16. Final Message
 
-HAMUTUK nia objetivu mak ajuda komunidade rai no organiza informasaun importante maski internet la estável.
+HAMUTUK 2.0 nia objetivu mak ajuda komunidade organiza no rai informasaun importante durante disaster situations, liuliu iha fatin ne'ebé internet la estável.
 
-**Our principle:** Komunidade bele rejista informasaun importante maski internet la iha, no sistema tenke hatudu klaru se relatóriu rai de'it iha device ka server simu ona.
+Offline-first design bele ajuda komunidade kria reports maski connectivity la iha, maibé sistema tenke comunica klaru kona-ba synchronization status no nia limitations.
 
-HAMUTUK mak step ida ba more resilient community coordination. Nia la substitui emergency services ka reliable communication infrastructure.
+**Our principle: Save locally. Synchronize when possible. Verify before action. Keep emergency fallback procedures available.**
+
+**HAMUTUK — Teknolojia ba komunidade ne'ebé prontu, konektadu, no forte hamutuk.**
